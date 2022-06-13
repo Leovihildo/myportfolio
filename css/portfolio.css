@@ -61,7 +61,7 @@ h1,h2,h3,h4{
     font-weight: var(--md-font);
 }
 i{
-    font-size: var(--icon-font-size;
+    font-size: var(--icon-font-size);
 }
 ul{
     list-style: none;
