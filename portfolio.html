@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Joshua's Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <script src="https://kit.fontawesome.com/d2d33bd796.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"> 
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="container nav">
+            <!-- <a href="#" class="nav_logo">Joshua</a> -->
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link"><i class="fa fa-home nav_icon" aria-hidden="true"></i>Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link"><i class="fa fa-user nav_icon" aria-hidden="true"></i>About</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#portfolio" class="nav_link"><i class="fa fa-briefcase nav_icon" aria-hidden="true"></i>Portfolio</a>
+                    </li>
+                </ul>
+                <i class="fa fa-times nav_close d-lg-none" id="nav-close" aria-hidden="true"></i>
+            </div>
+            <div class="nav_btns">
+                <div class="nav_toggle d-lg-none" id="nav-toggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- HOME SECTION OF PAGE -->
+    <section class="home-section section" id="home">
+    <div class="container row">
+        <div class="home-data col-sm-12 col-lg-6">
+        <h2 class="section-header">Welcome,</h2>
+        <h3 class="section-subheader">I am Joshua Johnson.</h3>
+        <p class="section-description">A frontend developer, sales expert and graphic designer</p>
+        <a href="assets/Joshua's resume.pdf" download><button class="btn btn-home">Download CV
+            <i class="fa fa-download" aria-hidden="true"></i>
+        </button></a>
+        </div>
+        <div class="profile-img col-sm-12 col-lg-6">
+            <img src="images/profile-pic.png" alt="My-profile-picture">      
+        </div>
+        <div class="info row">
+            <div class="exp_info col-6">
+                <span class="exp_info-years">
+                    03+
+                </span>
+                <span class="exp_info-description">
+                    Years <br> Experience
+                </span>
+            </div>
+
+            <div class="exp_info col-6">
+                <span class="exp_info-years">
+                    18+
+                </span>
+                <span class="exp_info-description">
+                    Projects <br> Completed
+                </span>
+            </div>
+        </div>
+        <div class="info-btn">
+            <button class="btn btn-home">Contact me
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+    </section>
+
+    <!-- ---ABOUT SECTION OF THE PAGE--- -->
+    <section class="about-section section" id="about">
+        <div class="container row">
+            <!-- ----EDUCATION AND WORK EXPERIENCE---- -->
+            <div class="edu-exp">
+                <div class="edu-btn btn selected edu underline" data-target="#education">
+                    <i class="fa fa-graduation-cap exp-icon" aria-hidden="true"></i>
+                    Education
+                </div>
+
+                <div class="edu-btn btn work" data-target="#work">
+                    <i class="fa fa-briefcase exp-icon" aria-hidden="true"></i>
+                    Work
+                </div>
+            </div>
+
+                <div class="edu-sections">
+            <!-- ----EDUCATIONAL EXPERIENCE---- -->
+                    <div class="edu-content selected" data-content id="education">
+                <!-- ----EDUCATIONAL EXPERIENCE 1---- -->
+                        <div class="edu-data">
+                            <div>
+                                <h3 class="edu-title">SSCE</h3>
+                                    <span class="edu-subtitle">
+                                        TrustyChild College
+                                    </span>
+                            <div class="edu-calendar text-muted">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                2009 - 2014
+                            </div>
+                        </div>
+                        <div>
+                            <span class="edu-rounder"></span>
+                            <span class="edu-line"></span>
+                        </div>
+                    </div>
+                     <!-- ----EDUCATIONAL EXPERIENCE 2---- -->
+                        <div class="edu-data">
+                            <div></div>
+                            <div>
+                                <span class="edu-rounder"></span>
+                                <span class="edu-line"></span>
+                            </div>
+                            <div>
+                                <h3 class="edu-title">Marine Engineer</h3>
+                                    <span class="edu-subtitle">
+                                        Yaba College of Technology
+                                    </span>
+                            <div class="edu-calendar text-muted">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                2016 - 2017
+                            </div>
+                            </div>
+                    </div>
+                     <!-- ----EDUCATIONAL EXPERIENCE 3---- -->
+                        <div class="edu-data">
+                            <div>
+                                <h3 class="edu-title">B.Sc Computer Science</h3>
+                                    <span class="edu-subtitle">
+                                       University of Ibadan
+                                    </span>
+                            <div class="edu-calendar text-muted">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                2017 - present
+                            </div>
+                            </div>
+                        <div>
+                            <span class="edu-rounder"></span>
+                            <!-- <span class="edu-line"></span> -->
+                        </div>
+                    </div>
+                    </div> <!-- ---- END OF EDUCATIONAL EXPERIENCE---- -->
+
+                    <!-- ----WORK EXPERIENCE---- -->
+                    <div class="edu-content" data-content id="work">
+                    <!-- ----WORK EXPERIENCE 1---- -->
+                    <div class="edu-data">
+                        <div>
+                            <h3 class="edu-title">Flight Consultant</h3>
+                                <span class="edu-subtitle">
+                                   Adonai Travels and Tours
+                                </span>
+                        <div class="edu-calendar text-muted">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            2015 - 2016
+                        </div>
+                        </div>
+                    <div>
+                        <span class="edu-rounder"></span>
+                        <span class="edu-line"></span>
+                    </div>
+                </div>
+                <!-- ---WORK EXPERIENCE 2---- -->
+                <div class="edu-data">
+                    <div></div>
+                    <div>
+                        <span class="edu-rounder"></span>
+                        <span class="edu-line"></span>
+                    </div>
+                    <div>
+                        <h3 class="edu-title">Sales Executive</h3>
+                            <span class="edu-subtitle">
+                               Revite Global Limited
+                            </span>
+                    <div class="edu-calendar text-muted">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        2019 - 2020
+                    </div>
+                    </div>
+            </div>
+              <!-- ---WORK EXPERIENCE 3---- -->
+              <div class="edu-data">
+                  <div></div>
+                  <div>
+                    <span class="edu-rounder"></span>
+                    <!-- <span class="edu-line"></span> -->
+                  </div>
+                <div>
+                    <h3 class="edu-title">Frontend developer and Graphic designer</h3>
+                        <span class="edu-subtitle">
+                           Freelancer
+                        </span>
+                <div class="edu-calendar text-muted">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    2019 - present
+                </div>
+                </div>
+
+                </div>
+                <!-- ----END OF WORK EXPERIENCE---- -->
+                </div>
+                </div><!-- ----END OF EDUCATION AND WORK EXPERIENCE---- -->
+
+                <!-- ----SKILLS---- -->
+                <h2 class="section-header skills-section">Skills</h2>
+                <div class="container skills-container row">
+                        <div class="skills-content" id="skills">
+                            <!-- ----SKILLS 1--- -->
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Frontend developer
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body row">
+                                        <div class="col-4 skill-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                        <div class="col-4 skill-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                        <div class="col-4 skill-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                        <div class="col-4 skill-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Graphic designer
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body row">
+                                        <div class="col-4 skill-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                        <div class="col-4 skill-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                        <div class="col-4 skill-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                        <div class="col-4 skill-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      Sales expert
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body row">
+                                        <div class="col-4 skill-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                        <div class="col-4 skill-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                        <div class="col-4 skill-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                        <div class="col-4 skill-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                    </div><!-- ----END OF SKILLS SECTION--- -->
+                    </div><!-- ----END OF SKILLS CONTAINER--- -->
+            </div><!-- ----END OF ABOUT CONTAINER---- -->
+    </section><!-- ----END OF ABOUT SECTION---- -->
+
+    <!-- -----PORTFOLIO SECTION OF THE PAGE----- -->
+    <section class="portfolio-section section" id="portfolio">
+        <div class="container row portfolio-container">
+            <h2 class="section-header skills-section">Portfolio</h2>
+            <!-- PORTFOLIO AS A GRAPHIC DESIGNER----- -->
+            <h3 class="section-subheader graphic-skill">As a graphic designer</h3>
+            <span class="arrow-down-one"><i class="fa fa-sort-desc arrow-down-one-icon" aria-hidden="true"></i></span>
+            <div class="swiper mySwiper graphic-container"> <!--SWIPER CONTAINER FOR GRAPHIC DESIGNER PORTFOLIO -->
+            <div class="swiper-wrapper">
+            <!-- GRAPHIC DESINGER PORTFOLIO 1---- -->
+            <div class="card col-3 swiper-slide" style="width: 20rem;">
+                <img src="images/Graphics/REA_1200.jpg" alt="REA-Schools-graphic-design" class="card-img-top">
+                <div class="card-body">
+                <h4 class="card-title">REA Flyer</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Officia rerum facilis sit optio maxime ducimus quos minus atque explicabo pariatur, 
+                    iste velit consequuntur voluptatum. Ea repudiandae nobis quas consectetur suscipit.
+                </p>
+                <a href="images/Graphics/REA_1200.jpg" class="btn" download>Download image</a>
+                </div>
+            </div> <!-- ---END OF GRAPHIC DESIGNER PORTFOLIO 1---- -->
+
+            <!-- GRAPHIC DESINGER PORTFOLIO 2---- -->
+            <div class="card col-3 swiper-slide" style="width: 20rem;">
+                <img src="images/Graphics/Spring_1200.jpg" alt="Spring-laundry-and-drycleaning-flyer" class="card-img-top">
+                <div class="card-body">
+                <h4 class="card-title">Spring Laundry and Drycleaning Services</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Officia rerum facilis sit optio maxime ducimus quos minus atque explicabo pariatur, 
+                    iste velit consequuntur voluptatum. Ea repudiandae nobis quas consectetur suscipit.
+                </p>
+                <a href="images/Graphics/Spring_1200.jpg" class="btn" download>Download image</a>
+                </div>
+            </div> <!-- ---END OF GRAPHIC DESIGNER PORTFOLIO 2---- -->
+
+            <!-- GRAPHIC DESINGER PORTFOLIO 3---- -->
+            <div class="card col-3 swiper-slide" style="width: 20rem;">
+                <img src="images/Graphics/Lenascakes_1200.jpg" alt="Lenas-cakes-logo-brand" class="card-img-top">
+                <div class="card-body">
+                <h4 class="card-title">Lena&apos;s Cakes</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Officia rerum facilis sit optio maxime ducimus quos minus atque explicabo pariatur, 
+                    iste velit consequuntur voluptatum. Ea repudiandae nobis quas consectetur suscipit.
+                </p>
+                <a href="images/Graphics/Lenascakes_1200.jpg" class="btn" download>Download image</a>
+                </div>
+            </div> <!-- ---END OF GRAPHIC DESIGNER PORTFOLIO 3---- -->
+            
+             <!-- GRAPHIC DESINGER PORTFOLIO 4---- -->
+             <div class="card col-3 swiper-slide" style="width: 20rem;">
+                <img src="images/Graphics/Omono_1200.jpg" alt="Omono's-kitchen-graphic-design" class="card-img-top">
+                <div class="card-body">
+                <h4 class="card-title">Omono&apos;s Kitchen</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Officia rerum facilis sit optio maxime ducimus quos minus atque explicabo pariatur, 
+                    iste velit consequuntur voluptatum. Ea repudiandae nobis quas consectetur suscipit.
+                </p>
+                <a href="images/Graphics/REA_1200.jpg" class="btn" download>Download image</a>
+                </div>
+            </div> <!-- ---END OF GRAPHIC DESIGNER PORTFOLIO 4---- -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            </div> <!--END OF SWIPER CONTAINER FOR GRAPHIC DESIGNER PORTFOLIO -->
+
+             <!-- PORTFOLIO AS A FRONTEND DEVELOPER----- -->
+             <h3 class="section-subheader graphic-skill">As a Frontend developer</h3>
+             <span class="arrow-down-two"><i class="fa fa-sort-desc arrow-down-two-icon" aria-hidden="true"></i></span>
+             <div class="swiper mySwiper frontend-container">
+                 <div class="swiper-wrapper">
+             <!-- FRONTEND DEVELOPER PORTFOLIO 1---- -->
+             <div class="card col-3 swiper-slide">
+                 <img src="images/Frontend/myportfolio.png" alt="my-first-portfolio-website" class="card-img-top">
+                 <div class="card-body">
+                 <h4 class="card-title">My first portfolio website</h4>
+                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     Officia rerum facilis sit optio maxime ducimus quos minus atque explicabo pariatur, 
+                     iste velit consequuntur voluptatum. Ea repudiandae nobis quas consectetur suscipit.
+                 </p>
+                 <a href="https://www.powtech.xyz" class="btn" target="_blank">View demo</a>
+                 </div>
+             </div> <!-- ---END OF FRONTEND DEVELOPER PORTFOLIO 1---- -->
+ 
+             <!-- FRONTEND DEVELOPER PORTFOLIO 2---- -->
+             <div class="card col-3 swiper-slide">
+                 <img src="images/Frontend/hp_large.jpg" alt="holiday-planner-web-app" class="card-img-top">
+                 <div class="card-body">
+                 <h4 class="card-title">The Holiday Planner web app</h4>
+                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     Officia rerum facilis sit optio maxime ducimus quos minus atque explicabo pariatur, 
+                     iste velit consequuntur voluptatum. Ea repudiandae nobis quas consectetur suscipit.
+                 </p>
+                 <a href="https://leovihildo.github.io" class="btn" target="_blank">View demo</a>
+                 </div>
+             </div> <!-- ---END OF FRONTEND DEVELOPER PORTFOLIO 2---- -->
+ 
+             <!-- FRONTEND DEVELOPER PORTFOLIO 3---- -->
+             <div class="card col-3 swiper-slide">
+                 <img src="images/Frontend/" alt="Lenas-cakes-logo-brand" class="card-img-top">
+                 <div class="card-body">
+                 <h4 class="card-title">Lena&apos;s Cakes</h4>
+                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     Officia rerum facilis sit optio maxime ducimus quos minus atque explicabo pariatur, 
+                     iste velit consequuntur voluptatum. Ea repudiandae nobis quas consectetur suscipit.
+                 </p>
+                 <a href="" class="btn" target="_blank">View demo</a>
+                 </div>
+             </div> <!-- ---END OF FRONTEND DEVELOPER PORTFOLIO 3---- -->
+             </div>
+             <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            </div>
+
+        </div> <!-- -----END OF PORTFOLIO CONTAINER----- -->
+    </section> <!-- -----END OF PORTFOLIO SECTION---- -->
+    
+    <script src="js/main.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jQuery v3.6.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
