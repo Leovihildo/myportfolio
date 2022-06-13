@@ -90,6 +90,8 @@ let swiper = new swiper(".graphic-container", {
     pagination: {
         el: ".swiper-pagination",
     },
+    observer: true, 
+    observeParents: true,
     mousewheel: true,
     keyboard: true,
 });
