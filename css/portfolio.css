@@ -26,13 +26,13 @@
 
     /* ---font sizes--- */
     --lg-font-size: 2rem;
-    --md-font-size: 1.15rem;
+    --md-font-size: 1.135rem;
     --sm-font-size: 1.045rem;
-    --xs-font-size: .75rem;
-    --h1-font-size: 1.8rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.3rem;
-    --icon-font-size: .685rem;
+    --xs-font-size: .85rem;
+    --h1-font-size: 1.6rem;
+    --h2-font-size: 1.4rem;
+    --h3-font-size: 1.25rem;
+    --icon-font-size: .725rem;
 
     /* ----Margin bottoms--- */
     --mb-lg: 20px;
@@ -59,6 +59,9 @@ body{
 h1,h2,h3,h4{
     color: var(--fg-colour);
     font-weight: var(--md-font);
+}
+i{
+    font-size: var(--icon-font-size;
 }
 ul{
     list-style: none;
@@ -189,13 +192,12 @@ div.info, .info-btn{
     border-bottom: 3px solid var(--main-color); 
 }
 .edu-icon{
-    font-size: var(--icon-font-size);
     margin-right: var(--mb-sm);
 }
 .edu-data{
     text-align: center;
     display: grid;
-    grid-template-columns: 2fr 100px 2fr;
+    grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.2rem;
     margin-bottom: var(--mb-lg);
 }
@@ -213,7 +215,7 @@ div.info, .info-btn{
     width: 1px;
     height: 110%;
     background-color: red;
-    transform: translate(50px, -7px);
+    transform: translate(5px, -7px);
 }
 #about [data-content]{
     display: none;
