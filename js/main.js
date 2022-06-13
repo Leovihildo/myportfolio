@@ -81,7 +81,7 @@ arrowtwo.addEventListener("click", ()=>{
 
 //Portfolio Swiper
 
-let swiper = new swiper(".graphic-container", {
+var swiper = new Swiper(".mySwiper", {
     cssMode: true,
     navigation: {
         nextEl: ".swiper-button-next",
@@ -90,8 +90,6 @@ let swiper = new swiper(".graphic-container", {
     pagination: {
         el: ".swiper-pagination",
     },
-    observer: true, 
-    observeParents: true,
     mousewheel: true,
     keyboard: true,
 });
