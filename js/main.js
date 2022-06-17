@@ -17,9 +17,8 @@ if(navclose){
 }
 
 //Function to go back to top
-document.getElementById("btn-up").addEventListener("click",function backtotop(){ 
-    document.body.scrollTop = 0; 
-    document.documentElement.scrollTop = 0;
+document.getElementById("btn-up").addEventListener("click",function(){ 
+    window.scrollTo(0, 0);
 });
 
 // Educational and work experiences
