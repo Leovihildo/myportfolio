@@ -16,6 +16,12 @@ if(navclose){
     })
 }
 
+//Function to go back to top
+document.getElementById("btn-up").addEventListener("click",function backtotop(){ 
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0;
+});
+
 // Educational and work experiences
 const sel = document.querySelectorAll('[data-target]'),
     contents = document.querySelectorAll('[data-content]'),
