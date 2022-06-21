@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Joshua's Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <script src="https://kit.fontawesome.com/d2d33bd796.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="container nav">
+            <!-- <a href="#" class="nav_logo">Joshua</a> -->
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link"><i class="icon fa fa-home-alt"></i>Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link"><i class="icon fas fa-user-alt"></i>About</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#portfolio" class="nav_link"><i class="icon fas fa-briefcase"></i>Portfolio</a>
+                    </li>
+                </ul>
+                <i class="icon fas fa-times nav_close d-lg-none" id="nav-close"></i>
+            </div>
+            <div class="nav_btns">
+                <div class="nav_toggle d-lg-none" id="nav-toggle">
+                    <i class="icon fa fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION OF PAGE -->
+    <section class="home-section section" id="home">
+    <div class="container row">
+        <div class="home-data col-sm-12 col-lg-6">
+        <h2 class="section-header">Welcome,</h2>
+        <h3 class="section-subheader">I am Joshua Johnson.</h3>
+        <p class="section-description">A frontend developer, sales expert and graphic designer</p>
+        <a href="assets/Joshua's resume.pdf" download><button class="btn btn-home">Download CV
+            <i class="icon fas fa-download"></i>
+        </button></a>
+        </div>
+        <div class="profile-img col-sm-12 col-lg-6">
+            <img src="images/profile-pic.png" alt="My-profile-picture">      
+        </div>
+        <div class="info row">
+            <div class="exp_info col-6">
+                <span class="exp_info-years">
+                    03+
+                </span>
+                <span class="exp_info-description">
+                    Years <br> Experience
+                </span>
+            </div>
+            <div class="exp_info col-6">
+                <span class="exp_info-years">
+                    18+
+                </span>
+                <span class="exp_info-description">
+                    Projects <br> Completed
+                </span>
+            </div>
+        </div>
+        <div class="info-btn">
+            <button class="btn btn-home" id="contact">Contact me
+                <i class="icon fas fa-envelope"></i>
+            </button>
+            <div class="hidden-form">
+            <form action="https://formsubmit.co/johnsonp.joshua@yahoo.com" method="POST" class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputText4" class="form-label">Name</label>
+                    <input id="inputText4" type="text" class="form-control" placeholder="Your fullname">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input id="inputEmail4" type="email" class="form-control" placeholder="yourdomain@email.com" required>
+                </div>
+                <div class="col-12 form-floating">
+                    <textarea id="floatingTextarea2" class="form-control" style="height: 130px;" required></textarea>
+                    <label style="color: #000;" for="floatingTextarea2">write your message...</label>
+                </div>
+                <input type="hidden" name="_next" value="Thanks.html">
+                <button id="email" type="submit" class="btn btn-success">Submit</button>
+                <button id="email" type="submit" class="btn btn-danger btn-close-form">Close</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- ---ABOUT SECTION OF THE PAGE--- -->
+    <section class="about-section section" id="about">
+        <div class="container row">
+            <!-- ----EDUCATION AND WORK EXPERIENCE---- -->
+            <div class="edu-exp">
+                <div class="edu-btn btn selected edu underline" data-target="#education">
+                    <i class="icon fas fa-graduation-cap exp-icon"></i>
+                    Education
+                </div>
+
+                <div class="edu-btn btn work" data-target="#work">
+                    <i class="icon fas fa-briefcase exp-icon"></i>
+                    Work
+                </div>
+            </div>
+
+                <div class="edu-sections">
+            <!-- ----EDUCATIONAL EXPERIENCE---- -->
+                    <div class="edu-content selected" data-content id="education">
+                <!-- ----EDUCATIONAL EXPERIENCE 1---- -->
+                        <div class="edu-data">
+                            <div>
+                                <h3 class="edu-title">SSCE</h3>
+                                    <span class="edu-subtitle">
+                                        TrustyChild College
+                                    </span>
+                            <div class="edu-calendar text-muted">
+                                <i class="icon fa fa-calendar" aria-hidden="true"></i>
+                                2009 - 2014
+                            </div>
+                        </div>
+                        <div>
+                            <span class="edu-rounder"></span>
+                            <span class="edu-line"></span>
+                        </div>
+                    </div>
+                     <!-- ----EDUCATIONAL EXPERIENCE 2---- -->
+                        <div class="edu-data">
+                            <div></div>
+                            <div>
+                                <span class="edu-rounder"></span>
+                                <span class="edu-line"></span>
+                            </div>
+                            <div>
+                                <h3 class="edu-title">Marine Engineer</h3>
+                                    <span class="edu-subtitle">
+                                        Yaba College of Technology
+                                    </span>
+                            <div class="edu-calendar text-muted">
+                                <i class="icon fa fa-calendar" aria-hidden="true"></i>
+                                2016 - 2017
+                            </div>
+                            </div>
+                    </div>
+                     <!-- ----EDUCATIONAL EXPERIENCE 3---- -->
+                        <div class="edu-data">
+                            <div>
+                                <h3 class="edu-title">B.Sc Computer Science</h3>
+                                    <span class="edu-subtitle">
+                                       University of Ibadan
+                                    </span>
+                            <div class="edu-calendar text-muted">
+                                <i class="icon fa fa-calendar" aria-hidden="true"></i>
+                                2017 - present
+                            </div>
+                            </div>
+                        <div>
+                            <span class="edu-rounder"></span>
+                            <!-- <span class="edu-line"></span> -->
+                        </div>
+                    </div>
+                    </div> <!-- ---- END OF EDUCATIONAL EXPERIENCE---- -->
+
+                    <!-- ----WORK EXPERIENCE---- -->
+                    <div class="edu-content" data-content id="work">
+                    <!-- ----WORK EXPERIENCE 1---- -->
+                    <div class="edu-data">
+                        <div>
+                            <h3 class="edu-title">Flight Consultant</h3>
+                                <span class="edu-subtitle">
+                                   Adonai Travels and Tours
+                                </span>
+                        <div class="edu-calendar text-muted">
+                            <i class="icon fa fa-calendar" aria-hidden="true"></i>
+                            2015 - 2016
+                        </div>
+                        </div>
+                    <div>
+                        <span class="edu-rounder"></span>
+                        <span class="edu-line"></span>
+                    </div>
+                </div>
+                <!-- ---WORK EXPERIENCE 2---- -->
+                <div class="edu-data">
+                    <div></div>
+                    <div>
+                        <span class="edu-rounder"></span>
+                        <span class="edu-line"></span>
+                    </div>
+                    <div>
+                        <h3 class="edu-title">Sales Executive</h3>
+                            <span class="edu-subtitle">
+                               Revite Global Limited
+                            </span>
+                    <div class="edu-calendar text-muted">
+                        <i class="icon fa fa-calendar" aria-hidden="true"></i>
+                        2019 - 2020
+                    </div>
+                    </div>
+            </div>
+              <!-- ---WORK EXPERIENCE 3---- -->
+              <div class="edu-data">
+                  <div></div>
+                  <div>
+                    <span class="edu-rounder"></span>
+                    <!-- <span class="edu-line"></span> -->
+                  </div>
+                <div>
+                    <h3 class="edu-title">Frontend developer and Graphic designer</h3>
+                        <span class="edu-subtitle">
+                           Freelancer
+                        </span>
+                <div class="edu-calendar text-muted">
+                    <i class="icon fa fa-calendar" aria-hidden="true"></i>
+                    2019 - present
+                </div>
+                </div>
+
+                </div>
+                <!-- ----END OF WORK EXPERIENCE---- -->
+                </div>
+                </div><!-- ----END OF EDUCATION AND WORK EXPERIENCE---- -->
+
+                <!-- ----SKILLS---- -->
+                <h2 class="section-header skills-section">Skills</h2>
+                <div class="container skills-container">
+                    <!-- ----SKILLS CONTENT---- -->
+                    <div class="skills-content row">
+                        <!-- ----FRONTEND DEVELOPER SKILLS---- -->
+                       <div class="skills-title col-sm-12 col-md-6">
+                           <h3 class="section-subheader">Frontend developer</h3>
+                       <div class="skills-list grid">
+                            <!-- ----FRONTEND SKILL 1---- -->
+                           <div class="skills-data">
+                               <div class="skill">
+                                   <h4 class="section-description skill-name">Html</h4>
+                                   <span class="skills-num">90%</span>
+                               </div>
+                               <div class="skills-bar">
+                                   <span class="skills-percentage" style="width: 90%;"></span>
+                               </div>
+                           </div>
+                            <!-- ----END OF FRONTEND SKILL 1---- -->
+
+                             <!-- ----FRONTEND SKILL 2---- -->
+                           <div class="skills-data">
+                            <div class="skill">
+                                <h4 class="section-description skill-name">CSS</h4>
+                                <span class="skills-num">85%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 85%;"></span>
+                            </div>
+                        </div>
+                         <!-- ----END OF FRONTEND SKILL 2---- -->
+
+                          <!-- ----FRONTEND SKILL 3---- -->
+                          <div class="skills-data">
+                            <div class="skill">
+                                <h4 class="section-description skill-name">Javascript</h4>
+                                <span class="skills-num">70%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 70%;"></span>
+                            </div>
+                        </div>
+                         <!-- ----END OF FRONTEND SKILL 3---- -->
+
+                          <!-- ----FRONTEND SKILL 4---- -->
+                          <div class="skills-data">
+                            <div class="skill">
+                                <h4 class="section-description skill-name">Bootstrap</h4>
+                                <span class="skills-num">60%</span>
+                            </div>
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 60%;"></span>
+                            </div>
+                        </div><!-- ----END OF FRONTEND SKILL 4---- -->
+                       </div>
+                       </div>
+                        <!-- ----END OF FRONTEND SKILL 4---- -->
+
+
+                         <!-- ----GRAPHIC DESIGNER SKILLS---- -->
+                         <div class="skills-title col-sm-12 col-md-6">
+                            <h3 class="section-subheader">Graphic Designer</h3>
+                        
+                        <div class="skills-list grid">
+                             <!-- -----GRAPHIC DESIGNER SKILL 1---- -->
+                            <div class="skills-data">
+                                <div class="skill">
+                                    <h4 class="section-description skill-name">Adobe Photoshop</h4>
+                                    <!-- <span class="skills-num">70%</span> -->
+                                </div>
+                                <div class="circular-progress">
+                                    <div class="skills-percentage-circle">70</div>
+                                </div>
+                            </div>
+                             <!-- ----END OF GRAPHIC DESIGNER SKILL 1---- -->
+ 
+                              <!-- -----GRAPHIC DESIGNER SKILL 2---- -->
+                            <div class="skills-data">
+                             <div class="skill">
+                                 <h4 class="section-description skill-name">Canva</h4>
+                                 <!-- <span class="skills-num">80%</span> -->
+                             </div>
+                             <div class="circular-progress">
+                                 <div class="skills-percentage-circle">80</div>
+                             </div>
+                         </div>
+                          <!-- ----END OF GRAPHIC DESIGNER SKILL 2---- -->
+ 
+                           <!-- -----GRAPHIC DESIGNER SKILL 3---- -->
+                           <div class="skills-data">
+                             <div class="skill">
+                                 <h4 class="section-description skill-name">Illustrator</h4>
+                                 <!-- <span class="skills-num">70%</span> -->
+                             </div>
+                             <div class="circular-progress">
+                                 <div class="skills-percentage-circle">70</div>
+                             </div>
+                         </div>
+                          <!-- ----END OF GRAPHIC DESIGNER SKILL 3---- -->
+                          </div>
+                    </div><!-- ----END OF GRAPHIC DESIGNER SKILLS---- -->
+
+                    </div><!-- ----END OF SKILLS ROW CONTENT---- -->      
+                    </div><!-- ----END OF SKILLS CONTAINER--- -->
+            </div><!-- ----END OF ABOUT CONTAINER---- -->
+    </section><!-- ----END OF ABOUT SECTION---- -->
+
+    <!-- -----PORTFOLIO SECTION OF THE PAGE----- -->
+    <section class="portfolio-section section" id="portfolio">
+        <div class="container row portfolio-container">
+            <h2 class="section-header skills-section">Portfolio</h2>
+            <!-- PORTFOLIO AS A GRAPHIC DESIGNER----- -->
+            <h3 class="section-subheader graphic-skill">As a graphic designer</h3>
+            <span class="arrow-down-one"><i class="icon fa fa-sort-desc arrow-down-one-icon" aria-hidden="true"></i></span>
+            <div class="swiper mySwiper graphic-container"> <!--SWIPER CONTAINER FOR GRAPHIC DESIGNER PORTFOLIO -->
+            <div class="swiper-wrapper">
+            <!-- GRAPHIC DESINGER PORTFOLIO 1---- -->
+            <div class="card col-3 swiper-slide" style="width: 20rem;">
+                <img src="images/Graphics/REA_1200.jpg" alt="REA-Schools-graphic-design" class="card-img-top">
+                <div class="card-body">
+                <h4 class="card-title">REA Flyer</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Officia rerum facilis sit optio maxime ducimus quos minus atque explicabo pariatur, 
+                    iste velit consequuntur voluptatum. Ea repudiandae nobis quas consectetur suscipit.
+                </p>
+                <a href="images/Graphics/REA_1200.jpg" class="btn" download>Download image</a>
+                </div>
+            </div> <!-- ---END OF GRAPHIC DESIGNER PORTFOLIO 1---- -->
+
+            <!-- GRAPHIC DESINGER PORTFOLIO 2---- -->
+            <div class="card col-3 swiper-slide" style="width: 20rem;">
+                <img src="images/Graphics/Spring_1200.jpg" alt="Spring-laundry-and-drycleaning-flyer" class="card-img-top">
+                <div class="card-body">
+                <h4 class="card-title">Spring Laundry and Drycleaning Services</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Officia rerum facilis sit optio maxime ducimus quos minus atque explicabo pariatur, 
+                    iste velit consequuntur voluptatum. Ea repudiandae nobis quas consectetur suscipit.
+                </p>
+                <a href="images/Graphics/Spring_1200.jpg" class="btn" download>Download image</a>
+                </div>
+            </div> <!-- ---END OF GRAPHIC DESIGNER PORTFOLIO 2---- -->
+
+            <!-- GRAPHIC DESINGER PORTFOLIO 3---- -->
+            <div class="card col-3 swiper-slide" style="width: 20rem;">
+                <img src="images/Graphics/Lenascakes_1200.jpg" alt="Lenas-cakes-logo-brand" class="card-img-top">
+                <div class="card-body">
+                <h4 class="card-title">Lena&apos;s Cakes</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Officia rerum facilis sit optio maxime ducimus quos minus atque explicabo pariatur, 
+                    iste velit consequuntur voluptatum. Ea repudiandae nobis quas consectetur suscipit.
+                </p>
+                <a href="images/Graphics/Lenascakes_1200.jpg" class="btn" download>Download image</a>
+                </div>
+            </div> <!-- ---END OF GRAPHIC DESIGNER PORTFOLIO 3---- -->
+            
+             <!-- GRAPHIC DESINGER PORTFOLIO 4---- -->
+             <div class="card col-3 swiper-slide" style="width: 20rem;">
+                <img src="images/Graphics/Omono_1200.jpg" alt="Omono's-kitchen-graphic-design" class="card-img-top">
+                <div class="card-body">
+                <h4 class="card-title">Omono&apos;s Kitchen</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Officia rerum facilis sit optio maxime ducimus quos minus atque explicabo pariatur, 
+                    iste velit consequuntur voluptatum. Ea repudiandae nobis quas consectetur suscipit.
+                </p>
+                <a href="images/Graphics/REA_1200.jpg" class="btn" download>Download image</a>
+                </div>
+            </div> <!-- ---END OF GRAPHIC DESIGNER PORTFOLIO 4---- -->
+            </div>
+            <div class="swiper-button-next d-none d-lg-block"></div>
+            <div class="swiper-button-prev d-none d-lg-block"></div>
+            <div class="swiper-pagination"></div>
+            </div> <!--END OF SWIPER CONTAINER FOR GRAPHIC DESIGNER PORTFOLIO -->
+
+             <!-- PORTFOLIO AS A FRONTEND DEVELOPER----- -->
+             <h3 class="section-subheader graphic-skill">As a Frontend developer</h3>
+             <span class="arrow-down-two"><i class="icon fa fa-sort-desc arrow-down-two-icon" aria-hidden="true"></i></span>
+             <div class="swiper mySwiper frontend-container">
+                 <div class="swiper-wrapper">
+             <!-- FRONTEND DEVELOPER PORTFOLIO 1---- -->
+             <div class="card col-3 swiper-slide">
+                 <img src="images/Frontend/myportfolio.png" alt="my-first-portfolio-website" class="card-img-top">
+                 <div class="card-body">
+                 <h4 class="card-title">My first portfolio website</h4>
+                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     Officia rerum facilis sit optio maxime ducimus quos minus atque explicabo pariatur, 
+                     iste velit consequuntur voluptatum. Ea repudiandae nobis quas consectetur suscipit.
+                 </p>
+                 <a href="https://www.powtech.xyz" class="btn" target="_blank">View demo
+                 <i class="icon fas fa-external-link"></i></a>
+                 </div>
+             </div> <!-- ---END OF FRONTEND DEVELOPER PORTFOLIO 1---- -->
+ 
+             <!-- FRONTEND DEVELOPER PORTFOLIO 2---- -->
+             <div class="card col-3 swiper-slide">
+                 <img src="images/Frontend/hp_large.jpg" alt="holiday-planner-web-app" class="card-img-top">
+                 <div class="card-body">
+                 <h4 class="card-title">The Holiday Planner web app</h4>
+                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     Officia rerum facilis sit optio maxime ducimus quos minus atque explicabo pariatur, 
+                     iste velit consequuntur voluptatum. Ea repudiandae nobis quas consectetur suscipit.
+                 </p>
+                 <a href="https://leovihildo.github.io/Holiday-planner" class="btn" target="_blank">View demo
+                 <i class="icon fas fa-external-link"></i></a>
+                 </div>
+             </div> <!-- ---END OF FRONTEND DEVELOPER PORTFOLIO 2---- -->
+ 
+             <!-- FRONTEND DEVELOPER PORTFOLIO 3---- -->
+             <div class="card col-3 swiper-slide">
+                 <img src="images/Frontend/" alt="Lenas-cakes-logo-brand" class="card-img-top">
+                 <div class="card-body">
+                 <h4 class="card-title">Lena&apos;s Cakes</h4>
+                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     Officia rerum facilis sit optio maxime ducimus quos minus atque explicabo pariatur, 
+                     iste velit consequuntur voluptatum. Ea repudiandae nobis quas consectetur suscipit.
+                 </p>
+                 <a href="" class="btn" target="_blank">View demo
+                 <i class="icon fas fa-external-link"></i></a>
+                 </div>
+             </div> <!-- ---END OF FRONTEND DEVELOPER PORTFOLIO 3---- -->
+             </div>
+             <div class="swiper-button-next d-none d-lg-block"></div>
+            <div class="swiper-button-prev d-none d-lg-block"></div>
+            <div class="swiper-pagination"></div>
+            </div>
+
+        </div> <!-- -----END OF PORTFOLIO CONTAINER----- -->
+    </section> <!-- -----END OF PORTFOLIO SECTION---- -->
+
+    <!-- -----BACK TO TOP BUTTON---- -->
+    <button type="button" id="btn-up" class="btn-up"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+
+    <!-- -----FOOTER SECTION--- -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <h5>Get your website Onl<span class="ispan">i</span>ne.</h5>
+                <div class="col-md-6 contact">
+                    <h6>Contact Info</h6>
+                    <div>
+                        <i class="fa fa-phone" aria-hidden="true"></i><span>+234-809-6169-948</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope" aria-hidden="true"></i><span>Johnsonp.Joshua@yahoo.com</span>
+                    </div>
+                </div><hr class="d-block d-sm-none">
+                <div class="col-md-6 row social">
+                    <h6>Social Links</h6>
+                    <div class="ig col-md-6 col-lg-2">
+                       <a href="https://www.instagram.com/leovihildo" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="fb col-md-6 col-lg-2">
+                      <a href="https://www.facebook.com/johnson.wizfacejoshua" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="linkd col-md-6 col-lg-2">
+                      <a href="https://www.linkedin.com/in/joshua-johnson-270382199" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copy">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill-opacity="0.7" d="M0,160L20,144C40,128,80,96,120,90.7C160,85,200,107,240,138.7C280,171,320,213,360,202.7C400,192,440,128,480,128C520,128,560,192,600,197.3C640,203,680,149,720,144C760,139,800,181,840,192C880,203,920,181,960,144C1000,107,1040,53,1080,58.7C1120,64,1160,128,1200,170.7C1240,213,1280,235,1320,229.3C1360,224,1400,192,1420,176L1440,160L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z">
+                    </path>
+                </svg>
+            </span>
+            <span>POW Tech Copyright&copy;</span>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jQuery v3.6.0.js"></script>
+    <!-- <script src="js/circle-progress.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
