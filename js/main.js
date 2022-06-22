@@ -129,7 +129,7 @@ var windowHeight = window.innerHeight;
 window.addEventListener("scroll", 
     function(){
             var dispTop = home.getBoundingClientRect().top;
-            if (dispTop < (windowHeight - 950)){
+            if (dispTop < (windowHeight - 1150)){
                 home.classList.add("blur-one");
             }
             else{
