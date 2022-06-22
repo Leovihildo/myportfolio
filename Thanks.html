@@ -24,7 +24,13 @@
         }
     </style>
     <script>
-        window.alert("Message sent!");
+        Swal.fire({ 
+            position: 'top-end', 
+            icon: 'success', 
+            title: 'Form submitted successfully', 
+            showConfirmButton: false, 
+            timer: 1500
+          });
     </script>
 </head>
 <body>
