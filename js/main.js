@@ -141,6 +141,7 @@ window.addEventListener("scroll",
 
 
 //skills progress bar
+Let skills = document.querySelector(".skills-section");
 let valuecontainer = document.querySelectorAll(".skills-percentage-circle");
 let progressbar = document.querySelectorAll(".circular-progress");
 // console.log(Number(container)+20);
@@ -153,15 +154,17 @@ valuecontainer.forEach(elem => {
         endval = (Number(elem.textContent));
         console.log(endval);
     });
-let progress = setInterval(()=>{
-    progressval++;
-    let data = progressval+'%';
+var sticky = skills.offsetTop;
+window.addEventListener("scroll", function(){ 
+if(window.pageYOffset >= sticky){ 
+     let progress = setInterval(()=>{
+        progressval++;
+        let data = progressval+'%';
         for (let i=0; i<valuecontainer.length; i++) {
             valuecontainer[i].innerHTML = data;   
         }
         if(progressval == endval){
                 clearInterval(progress);
-                console.log(progressval+'='+endval);
             }   
         // for (let i = 0; i < container.length; i++) {
         //     endval = container[i].textContent;
@@ -173,7 +176,10 @@ let progress = setInterval(()=>{
         progressbar.forEach(bar =>{
             bar.style.background = 'conic-gradient(#e7183b '+progressval * 3.6+'deg, #f38c9d '+progressval * 3.6+'deg)';
         })
-    });
+    })
+  })
+
+});
     
 //Portfolio Swiper
 
