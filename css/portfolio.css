@@ -615,7 +615,7 @@ footer .contact, footer .social{
         color: var(--title-colour);
     }
     .nav_icon{
-        font-size: var(--icon-font-size);
+        font-size: var(--sm-font-size);
     }
     .nav_close{
         position: absolute;
