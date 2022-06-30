@@ -346,7 +346,7 @@ div.info, .info-btn{
     margin: var(--mb-lg);
 }
 .card>img{
-     height: 4vh;
+     height: 370px;
 }
 .portfolio-container{
     display: flex;
