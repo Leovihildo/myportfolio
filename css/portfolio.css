@@ -345,8 +345,9 @@ div.info, .info-btn{
 #portfolio .card{
     margin: var(--mb-lg);
 }
-.card>img{
-     height: 480px;
+.card-title{
+     height: 60px;
+     overflow: scroll;
 }
 .portfolio-container{
     display: flex;
