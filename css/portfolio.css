@@ -344,10 +344,15 @@ div.info, .info-btn{
 /* ----PORTFOLIO SECTION OF THE PAGE---- */
 #portfolio .card{
     margin: var(--mb-lg);
+    border: none;
 }
 .card>img{
      width: 270px;
      height: 340px;
+}
+.card .text{
+     height: 44px;
+     overflow: scroll;
 }
 .portfolio-container{
     display: flex;
