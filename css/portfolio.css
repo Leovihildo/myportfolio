@@ -29,7 +29,7 @@
     --h1-font-size: 1.8rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.3rem;
-    --icon-font-size: 1.0015rem;
+    --icon-font-size: 1.03rem;
 
     /* ----Margin bottoms--- */
     --mb-lg: 20px;
@@ -347,8 +347,9 @@ div.info, .info-btn{
     border: none;
 }
 .card>img{
-     width: 270px;
-     height: 340px;
+     width: 310px;
+     height: 380px;
+     margin: 0 auto;
 }
 .card .text{
      height: 44px;
@@ -538,7 +539,7 @@ footer .contact, footer .social{
         --h1-font-size: 2.1rem;
         --h2-font-size: 2rem;
         --h3-font-size: 1.8rem;
-        --icon-font-size: 1.05rem;
+        --icon-font-size: 1.18rem;
     
         /* ----Margin bottoms--- */
         --mb-lg: 30px;
