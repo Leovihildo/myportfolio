@@ -137,6 +137,9 @@ img{
     filter: blur(25px);
 }
 /* ---HOME PAGE---- */
+.home-container{
+    margin: 0 auto;
+}
 .profile-img{
     margin: 0 auto;
 }
