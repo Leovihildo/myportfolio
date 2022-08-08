@@ -137,11 +137,6 @@ img{
     filter: blur(25px);
 }
 /* ---HOME PAGE---- */
-.home-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .profile-img{
     margin: 0 auto;
 }
