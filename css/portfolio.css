@@ -461,7 +461,8 @@ footer .contact, footer .social{
 }
 #footer-img>img{
     position: absolute;
-    width: 500px;
+    width: 35%;
+    height: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
