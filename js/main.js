@@ -180,3 +180,10 @@ let swiper = new Swiper(".mySwiper", {
     mousewheel: true,
     keyboard: true,
 });
+var swiper = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
