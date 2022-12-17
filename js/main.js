@@ -189,6 +189,7 @@ var swiper2 = new Swiper(".mySwiper2", {
       });
 var swiper1 = new Swiper(".mySwiper1", {
         loop: true,
+        slidesPerView: 2,
         spaceBetween: 10,
         navigation: {
           nextEl: ".swiper-button-next",
